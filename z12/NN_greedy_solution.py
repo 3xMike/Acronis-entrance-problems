@@ -4,7 +4,6 @@ from collections import namedtuple
 import math
 Point = namedtuple("Point", ['x', 'y'])
 
-
 class TspSolver(object):
     def __init__(self, points):
         self.points = points
@@ -105,7 +104,3 @@ Solution = Solver(Points)
 Solution.solve()
 answer = Solution.__str__(ID)
 print(answer)
-
-
-
-
