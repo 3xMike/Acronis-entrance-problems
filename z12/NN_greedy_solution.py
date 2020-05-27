@@ -58,7 +58,7 @@ class TspSolver(object):
 
 class Solver(TspSolver):
     def swap(self, start, end):
-# Удаление пересечений
+# Локальный поиск, 2-окрестность
         is_improved = False
         new_cycle = self.cycle[:start] + self.cycle[start:end + 1][::-1] + self.cycle[end + 1:]
         new_obj = self.obj - \
